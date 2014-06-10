@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FXRecordArcView.h"
+@interface FXViewController : UIViewController<FXRecordArcViewDelegate>
+@property(nonatomic, strong) FXRecordArcView *recordView;
 
-@interface FXViewController : UIViewController
+@property(nonatomic, strong) AVAudioPlayer *player;
 
 @end
